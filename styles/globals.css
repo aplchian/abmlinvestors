@@ -39,9 +39,9 @@ a {
     }
 */
 @-webkit-keyframes opacityPulse {
-  0% {opacity: 0.0;}
+  0% {opacity: 0.8;}
   50% {opacity: 1.0;}
-  100% {opacity: 0.0;}
+  100% {opacity: 0.8;}
 }
 
 /* Make the element's background pulse. I call this alertPulse because it is red. You can call it something more generic. */

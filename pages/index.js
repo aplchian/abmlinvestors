@@ -47,7 +47,11 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}>
             {
-                price.price != null && <a href="https://nextjs.org" style={{color: price.color}}>${price.price.toFixed(2)}</a>
+                price.price != null && <a href="https://nextjs.org" style={{color: price.color,
+                    animation: 'opacityPulse 1s ease-out',
+                    animationIterationCount: 'infinite',
+                    opacity: 1
+                }}>${price.price.toFixed(2)}</a>
             }
 
         </h1>

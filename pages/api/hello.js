@@ -7,6 +7,7 @@ export default async (req, res) => {
         },
     }
     const response = await fetch(`https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol?symbols=ABML&requestMethod=itv&noform=1&partnerId=2&fund=1&exthrs=1&output=json&events=1`, OPTIONS)
+    res.setHeader('Cache-Control', 'no-cache')
     if (response.ok) {
         const data = await response.json()
         return res.status(200).send(JSON.stringify({price: Number(data.FormattedQuoteResult.FormattedQuote[0].last)}))

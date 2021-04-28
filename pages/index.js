@@ -25,6 +25,7 @@ export default function Home() {
         }
 
         const int = setInterval(fn,2000)
+        fn()
 
     },[])
 

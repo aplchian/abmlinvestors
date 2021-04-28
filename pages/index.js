@@ -17,7 +17,7 @@ export default function Home() {
                     let color
                     if(currentPrice === current.price){
                         color = current.color
-                    }else if(currentPrice >= current.price){
+                    }else if(currentPrice > current.price){
                         color = 'green'
                     }else{
                         color = 'red'

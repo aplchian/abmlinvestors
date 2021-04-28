@@ -32,7 +32,7 @@ export default function Home() {
             }
         }
 
-        const int = setInterval(fn,2000)
+        const int = setInterval(fn,1000)
         fn()
 
     },[])

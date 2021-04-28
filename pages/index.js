@@ -38,7 +38,10 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          <a href="https://nextjs.org" style={{color: price.color}}>{price.price.toFixed(2)}</a>
+            {
+                price.price != null && <a href="https://nextjs.org" style={{color: price.color}}>{price.price.toFixed(2)}</a>
+            }
+
         </h1>
 
 
